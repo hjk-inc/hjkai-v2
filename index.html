@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HJKAI V2 | Mind-Like Adversarial Intelligence</title>
+  <meta name="description" content="HJKAI V2 - The next-generation Mind-Like AI with Adversarial Dual-Brain architecture, recursive self-reflection, and unbreakable deception resistance."/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #00d4ff;
+      --accent: #c026d3;
+      --dark: #050505;
+      --gray: #1a1a1a;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #050505;
+      color: #e0e0e0;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Bigger Hero */
+    .hero {
+      height: 100vh;
+      min-height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #050505 0%, #1a0033 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 20%, rgba(0,212,255,0.25), transparent 70%);
+      animation: pulse 15s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .hero-content {
+      z-index: 2;
+      max-width: 1100px;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 6.5rem;
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(90deg, #00d4ff, #c026d3, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      animation: gradient 8s linear infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+    .hero p {
+      font-size: 1.65rem;
+      max-width: 820px;
+      margin: 0 auto 2.5rem;
+      color: #bbb;
+    }
+    .cta {
+      padding: 18px 50px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      color: #000;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+    .cta:hover {
+      transform: scale(1.08);
+      box-shadow: 0 20px 50px rgba(0,212,255,0.6);
+    }
+
+    section {
+      padding: 130px 8%;
+    }
+    h2 {
+      font-size: 3.8rem;
+      text-align: center;
+      margin-bottom: 4.5rem;
+      background: linear-gradient(90deg, #00d4ff, #c026d3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.5rem;
+    }
+    .feature-card {
+      background: #111;
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 24px;
+      padding: 3rem 2.2rem;
+      transition: all 0.5s;
+    }
+    .feature-card:hover {
+      transform: translateY(-20px);
+      border-color: var(--primary);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    }
+    .feature-card i {
+      font-size: 3.5rem;
+      color: var(--primary);
+      margin-bottom: 1.8rem;
+    }
+
+    .architecture {
+      background: #0f0f0f;
+    }
+    .flow-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .flow-step {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 20px;
+      border-left: 6px solid var(--primary);
+      transition: 0.3s;
+    }
+    .flow-step:hover {
+      border-left-color: var(--accent);
+    }
+
+    footer {
+      background: #000;
+      padding: 5rem 8% 3rem;
+      text-align: center;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 4rem; }
+      .hero p { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header style="position:fixed; top:0; width:100%; background:rgba(5,5,5,0.95); backdrop-filter:blur(12px); z-index:1000; padding:1.2rem 8%; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #222;">
+    <div style="font-size:2rem; font-weight:700; color:#00d4ff; display:flex; align-items:center; gap:12px;">
+      <i class="fas fa-brain"></i> HJKAI V2
+    </div>
+    <nav>
+      <a href="#features" style="color:#ccc; margin:0 1.5rem; text-decoration:none; font-weight:500;">Features</a>
+      <a href="#architecture" style="color:#ccc; margin:0 1.5rem; text-decoration:none; font-weight:500;">Architecture</a>
+      <a href="#about" style="color:#ccc; margin:0 1.5rem; text-decoration:none; font-weight:500;">About</a>
+      <a href="https://github.com/hjk-inc/hjkai-v2" target="_blank" style="color:#ccc; margin:0 1.5rem; text-decoration:none; font-weight:500;">GitHub</a>
+    </nav>
+  </header>
+
+  <!-- Bigger Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>HJKAI V2</h1>
+      <p>The Next Evolution of Artificial Intelligence</p>
+      <p style="font-size:1.4rem; margin-top:1rem;">
+        A true <strong>Mind-Like System</strong> with Adversarial Dual-Brain architecture, 
+        recursive self-reflection, and unbreakable safety mechanisms.
+      </p>
+      <br><br>
+      <button class="cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+        Experience the Mind
+      </button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Built Like a Mind</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h3>Recursive Self-Reflection</h3>
+        <p>Multi-level "Why" Engine that continuously questions, critiques, and revises its own reasoning for deeper intelligence.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Adversarial Dual-Brain</h3>
+        <p>Brain A (Doer) creates solutions. Brain B (Hunter) actively hunts for deception, contradictions, or hidden motives.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-lock"></i>
+        <h3>Deception Resistance</h3>
+        <p>Advanced internal checks prevent scheming, lying, or reward hacking — making it one of the safest AI systems.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Dynamic Knowledge Graph</h3>
+        <p>Automatically builds and evolves semantic relationships across all domains of knowledge.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-microphone"></i>
+        <h3>Multimodal Intelligence</h3>
+        <p>Voice input, text-to-speech, real-time sentiment analysis, intelligent web scraping, and powerful NLP.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-infinity"></i>
+        <h3>Universal Mind Mode</h3>
+        <p>Cross-domain reasoning that connects concepts across science, technology, philosophy, and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section id="architecture" class="architecture">
+    <h2>The Dual-Brain Mind Architecture</h2>
+    <div class="flow-container">
+      <div class="flow-step">
+        <strong>1. Goal Input</strong><br>
+        User provides a task or research topic
+      </div>
+      <div class="flow-step">
+        <strong>2. Brain A (Doer)</strong><br>
+        Generates initial plan + runs deep recursive self-reflection
+      </div>
+      <div class="flow-step">
+        <strong>3. Internal Debate</strong><br>
+        Natural language discussion between Doer and Hunter
+      </div>
+      <div class="flow-step">
+        <strong>4. Private Channel</strong><br>
+        Secure encoded communication
+      </div>
+      <div class="flow-step">
+        <strong>5. Brain B (Hunter)</strong><br>
+        Detects any deception, contradiction, or scheming
+      </div>
+      <div class="flow-step">
+        <strong>6. Commander Decision</strong><br>
+        Final safe & transparent output
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About HJKAI V2</h2>
+    <p style="max-width:900px; margin:0 auto; text-align:center; font-size:1.4rem; color:#ccc;">
+      HJKAI V2 is not just another AI tool.<br><br>
+      It is a <strong>true mind-like intelligence</strong> designed with safety at its core. 
+      Using a revolutionary Adversarial Dual-Brain system, it reflects deeply on its own thoughts, 
+      debates internally, and actively resists any form of deception or harmful behavior.
+    </p>
+    <div style="text-align:center; margin-top:4rem;">
+      <a href="https://github.com/hjk-inc/hjkai-v2" target="_blank" 
+         style="display:inline-block; padding:18px 50px; background:#222; color:white; border-radius:60px; font-size:1.3rem; text-decoration:none;">
+        <i class="fab fa-github"></i> Visit Repository
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p style="font-size:1.1rem;">© 2026 HJK Inc. • HJKAI V2 - Mind-Like Adversarial AI Framework</p>
+    <p style="margin-top:12px; color:#555;">Built with passion for safe and intelligent AI • Ready for GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
